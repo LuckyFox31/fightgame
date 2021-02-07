@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2E4053;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1{
+        color: goldenrod;
+        font-size: 3em;
+        margin-bottom: 20px;
+
+        @media (max-width: 600px) {
+            font-size: 2em;
+        }
+    }
+
+    h2{
+        text-align: center;
+        font-size: 2em;
+        color: silver;
+        margin-bottom: 40px;
+
+        @media (max-width: 600px) {
+            font-size: 0.95em;
+        }
+    }
+
+    div{
+        text-align: center;
+        
+        input{
+            height: 40px;
+            width: 400px;
+
+            @media (max-width: 600px) {
+                width: 175px;
+            }
+        }
+
+        button{
+            height: 40px;
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+
+    .weaponsForms{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+
+        label{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            input{
+                display: block;
+                appearance: none;
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                cursor: pointer;
+
+                @media (max-width: 600px) {
+                    height: 75px;
+                    width: 75px;
+                }
+            }
+    
+            div{
+                height: 100px;
+                width: 100px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                @media (max-width: 600px) {
+                    height: 75px;
+                    width: 75px;
+                }
+            }
+
+            p{
+                color: white;
+            }
+    
+            .swordImg{
+                background-image: url("../../img/sword.png");
+            }
+    
+            .bowImg{
+                background-image: url("../../img/bow.png");
+            }
+    
+            .gunImg{
+                background-image: url("../../img/gun.png");
+            }
+        }
+    }
+}
+
+#playerOneWeapon{
+    display: none;
+}
+
+#playerTwoName{
+    display: none;
+}
+
+#playerTwoWeapon{
+    display: none;
+}
+
+#game{
+    display: none;
+    height: 60vh;
+    overflow: scroll;
+    margin-top: 20px;
+    border: 2px silver solid;
+    padding: 10px;
+    border-radius: 20px;
+
+    @media (max-width: 600px) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+#gameStart{
+    color: goldenrod;
+}
+
+.consoleParagraph{
+    color: #27AE60;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+footer{
+    color: silver;
+    position: absolute;
+    bottom: 50px;
+
+    #heart{
+        color: red;
+    }
+
+    a{
+        text-decoration: none;
+        color: goldenrod;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

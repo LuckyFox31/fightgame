@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="LuckyFox">
+    <title>Fight game</title>
+    <link rel="stylesheet" href="assets/style/css/index.css">
+    <script type="module" src="assets/js/app.js" defer></script>
+</head>
+<body>
+    <h1>Fight Game</h1>
+    <section id="playerOneName">
+        <h2>What is the name of the first player?</h2>
+        <div>
+            <input id="playerOneNameInput" type="text" name="playerOneName" placeholder="Enter the name of Player 1">
+            <button id="playerOneNameButton">Confirm</button>
+        </div>
+    </section>
+    <section id="playerOneWeapon">
+        <h2>What is the weapon of the first player?</h2>
+        <div class="weaponsForms">
+            <label>
+                <input class="weaponsPlayerOne" type="radio" name="weapons" value="sword">
+                <div class="swordImg"></div>
+                <p>Sword</p>
+              </label>
+            <label>
+                <input class="weaponsPlayerOne" type="radio" name="weapons" value="bow">
+                <div class="bowImg"></div>
+                <p>Bow</p>
+            </label>
+            <label>
+                <input class="weaponsPlayerOne" type="radio" name="weapons" value="gun">
+                <div class="gunImg"></div>
+                <p>Gun</p>
+            </label>
+        </div>
+    </section>
+    <section id="playerTwoName">
+        <h2>What is the name of the second player?</h2>
+        <div>
+            <input id="playerTwoNameInput" type="text" name="playerOneName" placeholder="Enter the name of Player 2">
+            <button id="playerTwoNameButton">Confirm</button>
+        </div>
+    </section>
+    <section id="playerTwoWeapon">
+        <h2>What is the weapon of the second player?</h2>
+        <div class="weaponsForms">
+            <label>
+                <input class="weaponsPlayerTwo" type="radio" name="weapons" value="sword">
+                <div class="swordImg"></div>
+                <p>Sword</p>
+              </label>
+            <label>
+                <input class="weaponsPlayerTwo" type="radio" name="weapons" value="bow">
+                <div class="bowImg"></div>
+                <p>Bow</p>
+            </label>
+            <label>
+                <input class="weaponsPlayerTwo" type="radio" name="weapons" value="gun">
+                <div class="gunImg"></div>
+                <p>Gun</p>
+            </label>
+        </div>
+    </section>
+    <section id="game">
+        <p id="gameStart">Game Started...</p>
+    </section>
+    <footer>
+        <p>Made with <span id="heart">&hearts;</span> by <a href="https://www.luckyfox.fr" target="_blank">LuckyFox</a></p>
+    </footer>
+</body>
+</html>
